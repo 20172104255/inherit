@@ -14,7 +14,7 @@ public:
 	CFeet(int tf, int ti);
 	~CFeet();
 	void display();
-	int getfeet;
+	int getfeet();
 	int getinches();
 };
 CFeet::CFeet()
@@ -36,6 +36,14 @@ CFeet::~CFeet()
 void CFeet::display()
 {
 	cout << "Display" << feet << "Ó¢³ß" << inches << "Ó¢´ç" << endl;
+}
+int CFeet::getfeet()
+{
+	return feet;
+}
+int CFeet::getinches()
+{
+	return inches;
 }
 class CMyfeet :public CFeet
 {
